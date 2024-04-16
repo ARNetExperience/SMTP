@@ -1,0 +1,29 @@
+PC1 > 192.168.11.1 
+PC2 > 192.168.11.2
+PC3 > 192.168.11.3
+Server > 181.168.11.4
+
+
+TODO :-
+
+✔️ add copy text
+
+✔️ change text color to black
+
+Update Home Page
+
+✔️ add simulation
+
+packet images
+
+✔️ change packetcolor
+
+add alert messages
+✔️    -> in start when page loads
+✔️ -> when click on text copy button
+✔️ -> add validation to the form click on send button to to enter subject and message
+
+✔️ add drop down menu
+
+
+
