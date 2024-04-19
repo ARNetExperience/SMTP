@@ -1782,12 +1782,12 @@
         if (recipient === "user1@email.com") {
           //Pc1 to Pc3 animation
           var modelViewer = document.getElementById('model2toPC3');
-          modelViewer.style.animation = 'model2toPC3 30s linear 1';
+          modelViewer.style.animation = 'model2toPC1 30s linear 1';
           modelViewer.style.display = 'block';
 
           // When the animation ends, hide the model-viewer element
           modelViewer.addEventListener('animationend', function () {
-            alert('This is how a SMTP Protocol works when you send email from user2@email.com to user3@email.com');
+            alert('This is how a SMTP Protocol works when you send email from user2@email.com to user1@email.com');
 
             modelViewer.style.display = 'none';
           });
