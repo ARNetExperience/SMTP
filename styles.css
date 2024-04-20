@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 
-#documentation , #video{
+#documentation , #video, #quiz{
   padding: 10px 6px;
   
 }
@@ -968,4 +968,133 @@ h3 {
   }
 
 
+}
+
+
+/* QUIZ CSS */
+
+
+
+#title {
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  background: rgb(127, 255, 127);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.questions {
+  margin: 3rem auto;
+  width: 90vw;
+  padding: 2rem;
+  background: rgb(127, 255, 127);
+  cursor: default;
+  border-radius: 1rem;
+  color: #000000;
+}
+
+#question {
+  margin-bottom: 1rem;
+}
+
+.option {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border-bottom: solid 0.1rem rgb(127, 170, 202);
+  width: 15rem;
+  color: #000000;
+  background: rgb(241, 241, 241);
+  border-radius: 1rem;
+}
+
+.option:hover {
+  color: rgb(70, 70, 70);
+}
+
+/* ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: rgb(1,73,73);
+} */
+span {
+  display: block;
+  padding: 0.1rem 0.7rem;
+  border-radius: 1rem;
+}
+
+#answer {
+  margin-top: 2.5rem;
+}
+
+#stat {
+  margin-top: 1.5rem;
+  color: rgb(6, 17, 168);
+}
+
+ .buttons{
+    text-align: center;
+}
+/* button{
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color: rgba(249, 249, 249, 0.98);
+    background: rgba(9, 9, 9, 0.82);
+} */ 
+
+
+button:active {
+  background: rgb(127, 255, 127);
+}
+
+#scoreboard,
+#answerBank {
+  width: 50rem;
+  background: rgb(127, 255, 127);
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 5rem;
+  display: none;
+  color: #000000;
+  border-radius: 1rem;
+}
+
+#score-title {
+  margin: 1rem 0;
+  color: #000000;
+  
+}
+
+#score-btn,
+#check-answer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+#score {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+#answerBank li {
+  text-align: left;
+  margin-bottom: 0.2rem;
+  font-size: larger;
+  color: #000000;
+}
+
+#answers {
+  margin-top: 1rem;
+  color: #000000;
+}
+
+#documentation , #video, #quiz{
+  padding: 10px 6px;
+  
 }
