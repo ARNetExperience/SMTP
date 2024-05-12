@@ -42,18 +42,28 @@ var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
 
-//function to display questions
-function displayQuestion(){
-    for(var a=0;a<span.length;a++){
-        span[a].style.background='none';
+//function to shuffle array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
-    option0.innerHTML= questionBank[i].option[0];
-    option1.innerHTML= questionBank[i].option[1];
-    option2.innerHTML= questionBank[i].option[2];
-    option3.innerHTML= questionBank[i].option[3];
-    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
-}
+    return array;
+  }
+  
+  //function to display questions
+  function displayQuestion(){
+      for(var a=0;a<span.length;a++){
+          span[a].style.background='none';
+      }
+      question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
+      var shuffledOptions = shuffleArray([...questionBank[i].option]); // Shuffle the options
+      option0.innerHTML= shuffledOptions[0];
+      option1.innerHTML= shuffledOptions[1];
+      option2.innerHTML= shuffledOptions[2];
+      option3.innerHTML= shuffledOptions[3];
+      stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+  }
 
 //function to calculate scores
 function calcScore(e){
